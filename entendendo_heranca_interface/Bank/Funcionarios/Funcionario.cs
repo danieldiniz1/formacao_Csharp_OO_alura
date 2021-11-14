@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Bank.Funcionarios
 {
-    public abstract class Funcionario
+    public abstract
+        class Funcionario
     {
         public static int TotalDeFuncionarios { get; private set; }
 
@@ -24,14 +25,10 @@ namespace Bank.Funcionarios
             TotalDeFuncionarios++;
         }
 
-        public virtual double GetBonificacao()
-        {
-            return Salario * 0.10;
-        }
+        public abstract double GetBonificacao();
 
-        public virtual void AumentarSalario()
-        {
-            Salario += Salario * 0.1;
-        }
+
+        public abstract void AumentarSalario();
+       
     }
 }

@@ -28,10 +28,13 @@ namespace Bank
 
             GerenteDeConta camila = new GerenteDeConta("123.456.789-80") { Nome = "Camila" };
 
+            Desenvolvedor guilherme = new Desenvolvedor("123.644.698-80") { Nome = "Guilherme" };
+
             gerenciadorBonificacao.Registrar(pedro);
             gerenciadorBonificacao.Registrar(roberta);
             gerenciadorBonificacao.Registrar(igor);
             gerenciadorBonificacao.Registrar(camila);
+            gerenciadorBonificacao.Registrar(guilherme);
 
             Console.WriteLine($"O valor total pago de bonificação será de {gerenciadorBonificacao.GetTotalBonificacao()}");
 

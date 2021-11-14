@@ -8,7 +8,7 @@ namespace Bank.Funcionarios
 {
     public class Diretor : Funcionario
     {
-        public Diretor( string cpf) : base(5000, cpf)
+        public Diretor(string cpf) : base(5000, cpf)
         {
             Console.WriteLine("Criando um Diretor");
             
