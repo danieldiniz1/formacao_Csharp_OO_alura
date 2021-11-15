@@ -29,7 +29,8 @@ namespace Bank
             GerenteDeConta camila = new GerenteDeConta("125.654.985-80") { Nome = "Camila", Senha = "456" };
             sistemaInterno.Logar(camila, "456");
 
-            
+            ParceiroComercial parceiro = new ParceiroComercial() {Senha = "789" };
+            sistemaInterno.Logar(parceiro, "789");
         }
 
         public static void CalcularBonificacao()

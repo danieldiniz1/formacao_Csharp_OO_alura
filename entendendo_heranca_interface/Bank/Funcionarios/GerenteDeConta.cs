@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bank.Funcionarios
 {
-    class GerenteDeConta : Autenticavel
+    class GerenteDeConta : FuncionarioAutenticavel
     {
         
 
@@ -21,6 +21,8 @@ namespace Bank.Funcionarios
         {
             Salario += Salario * 0.05;
         }
+
+        
 
         public override double GetBonificacao()
         {

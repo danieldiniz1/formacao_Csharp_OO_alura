@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace Bank.Funcionarios
 {
-    public class Diretor : Autenticavel
-    {
-        
+    public class Diretor : FuncionarioAutenticavel
+    {       
 
         public Diretor(string cpf) : base(5000, cpf)
         {
@@ -17,7 +16,7 @@ namespace Bank.Funcionarios
             
         }
 
-        
+               
         public override double GetBonificacao()
         {
             return Salario * 0.5 ;
@@ -28,5 +27,7 @@ namespace Bank.Funcionarios
         {
             Salario += Salario * 0.15;
         }
+
+        
     }
 }
