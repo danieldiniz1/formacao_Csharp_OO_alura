@@ -24,7 +24,7 @@ namespace Bank
             SistemaInterno sistemaInterno = new SistemaInterno();
             Diretor roberta = new Diretor("159.156.156-80") { Nome = "Roberta", Senha = "123" };
             sistemaInterno.Logar(roberta, "123");
-            sistemaInterno.Logar(roberta, "ABC");
+            
 
             GerenteDeConta camila = new GerenteDeConta("125.654.985-80") { Nome = "Camila", Senha = "456" };
             sistemaInterno.Logar(camila, "456");
